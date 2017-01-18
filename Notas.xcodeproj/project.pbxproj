@@ -8,22 +8,30 @@
 
 /* Begin PBXBuildFile section */
 		11A6D7D61E2CB04B00F66350 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A6D7D51E2CB04B00F66350 /* AppDelegate.swift */; };
-		11A6D7D81E2CB04B00F66350 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A6D7D71E2CB04B00F66350 /* ViewController.swift */; };
 		11A6D7DB1E2CB04B00F66350 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11A6D7D91E2CB04B00F66350 /* Main.storyboard */; };
 		11A6D7DE1E2CB04B00F66350 /* Notas.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 11A6D7DC1E2CB04B00F66350 /* Notas.xcdatamodeld */; };
 		11A6D7E01E2CB04B00F66350 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 11A6D7DF1E2CB04B00F66350 /* Assets.xcassets */; };
 		11A6D7E31E2CB04B00F66350 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11A6D7E11E2CB04B00F66350 /* LaunchScreen.storyboard */; };
+		11A6D7EF1E2CB18D00F66350 /* ListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A6D7EE1E2CB18D00F66350 /* ListViewController.swift */; };
+		11A6D7F11E2CB1AD00F66350 /* NoteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A6D7F01E2CB1AD00F66350 /* NoteTableViewCell.swift */; };
+		11A6D7F31E2CB1C800F66350 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A6D7F21E2CB1C800F66350 /* DetailViewController.swift */; };
+		11A6D8061E2D2C6800F66350 /* Note.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A6D8041E2D2C6800F66350 /* Note.swift */; };
+		11A6D8071E2D2C6800F66350 /* Note+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A6D8051E2D2C6800F66350 /* Note+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		11A6D7D21E2CB04B00F66350 /* Notas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		11A6D7D51E2CB04B00F66350 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		11A6D7D71E2CB04B00F66350 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		11A6D7DA1E2CB04B00F66350 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		11A6D7DD1E2CB04B00F66350 /* Notas.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Notas.xcdatamodel; sourceTree = "<group>"; };
 		11A6D7DF1E2CB04B00F66350 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		11A6D7E21E2CB04B00F66350 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		11A6D7E41E2CB04B00F66350 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		11A6D7EE1E2CB18D00F66350 /* ListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ListViewController.swift; sourceTree = "<group>"; };
+		11A6D7F01E2CB1AD00F66350 /* NoteTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoteTableViewCell.swift; sourceTree = "<group>"; };
+		11A6D7F21E2CB1C800F66350 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		11A6D8041E2D2C6800F66350 /* Note.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Note.swift; sourceTree = "<group>"; };
+		11A6D8051E2D2C6800F66350 /* Note+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Note+CoreDataProperties.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +48,8 @@
 		11A6D7C91E2CB04B00F66350 = {
 			isa = PBXGroup;
 			children = (
+				11A6D8041E2D2C6800F66350 /* Note.swift */,
+				11A6D8051E2D2C6800F66350 /* Note+CoreDataProperties.swift */,
 				11A6D7D41E2CB04B00F66350 /* Notas */,
 				11A6D7D31E2CB04B00F66350 /* Products */,
 			);
@@ -57,12 +67,14 @@
 			isa = PBXGroup;
 			children = (
 				11A6D7D51E2CB04B00F66350 /* AppDelegate.swift */,
-				11A6D7D71E2CB04B00F66350 /* ViewController.swift */,
 				11A6D7D91E2CB04B00F66350 /* Main.storyboard */,
 				11A6D7DF1E2CB04B00F66350 /* Assets.xcassets */,
 				11A6D7E11E2CB04B00F66350 /* LaunchScreen.storyboard */,
 				11A6D7E41E2CB04B00F66350 /* Info.plist */,
 				11A6D7DC1E2CB04B00F66350 /* Notas.xcdatamodeld */,
+				11A6D7EE1E2CB18D00F66350 /* ListViewController.swift */,
+				11A6D7F01E2CB1AD00F66350 /* NoteTableViewCell.swift */,
+				11A6D7F21E2CB1C800F66350 /* DetailViewController.swift */,
 			);
 			path = Notas;
 			sourceTree = "<group>";
@@ -139,9 +151,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				11A6D7D81E2CB04B00F66350 /* ViewController.swift in Sources */,
 				11A6D7DE1E2CB04B00F66350 /* Notas.xcdatamodeld in Sources */,
+				11A6D8071E2D2C6800F66350 /* Note+CoreDataProperties.swift in Sources */,
+				11A6D7EF1E2CB18D00F66350 /* ListViewController.swift in Sources */,
 				11A6D7D61E2CB04B00F66350 /* AppDelegate.swift in Sources */,
+				11A6D8061E2D2C6800F66350 /* Note.swift in Sources */,
+				11A6D7F11E2CB1AD00F66350 /* NoteTableViewCell.swift in Sources */,
+				11A6D7F31E2CB1C800F66350 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -301,6 +317,7 @@
 				11A6D7E91E2CB04B00F66350 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
